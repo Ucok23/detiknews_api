@@ -35,8 +35,11 @@ class DetikNewsApi:
         soup = BeautifulSoup(req.text, 'html.parser')
         tag = soup.find('div', class_="detail__body-text")
         body = ''
-        for i in tag.find_all('p'):
-            body += i.text
+        if tag.find_all('p'):
+            for i in tag.find_all('p'):
+                body += i.text
+        else:
+            body += tag.text
         return body
 
     def parse(self, search_response, detail=False):
