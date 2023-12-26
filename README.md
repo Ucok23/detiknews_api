@@ -8,6 +8,7 @@ To use:
 - Go into project directory
 - Install dependencies
     > pip install requirements.txt
+    > pip3 install -r requirements.txt
 
 - Run the main script:
     > python main.py
