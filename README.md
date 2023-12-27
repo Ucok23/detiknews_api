@@ -9,9 +9,15 @@ To use:
 - Install dependencies
     > pip install requirements.txt
 
+- Install dependencies using pip3
+    > pip3 install -r requirements.txt
+
 - Run the main script:
     > python main.py
 
+- Run the main script using python3:
+    > python3 main.py
+
 - In another terminal/postman/browser, go to:
-    > http://localhost:5000/search?{your query}
+    > http://localhost:5000/search?q=keyword
 
