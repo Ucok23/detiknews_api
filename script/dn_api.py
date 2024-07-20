@@ -48,13 +48,13 @@ class DetikNewsApi:
         data = []
 
         for i in tag:
-            judul = i.find('h2').text
+            judul = i.find('h3').find('a').text
             link = i.find('a').get('href')
             gambar = i.find('img').get('src')
             body = ''
             if detail:
                 body = self.detail(link)
-            waktu = i.find('span', class_="date").text
+            waktu = i.find('div', class_="media__date").find('span').get('title')
             data.append({'judul': judul,
                     'link': link,
                     'gambar': gambar,
