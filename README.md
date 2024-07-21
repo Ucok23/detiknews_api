@@ -7,7 +7,7 @@ To use:
 
 - Go into project directory
 - Install dependencies
-    > pip install requirements.txt
+    > pip install -r requirements.txt
 
 - Install dependencies using pip3
     > pip3 install -r requirements.txt
