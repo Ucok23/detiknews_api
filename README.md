@@ -8,7 +8,7 @@ This script can search and return list of news result
 
 Now we're separating script that fetch detik news to new library, this repo use that new library.
 
-Here's the library: [dn_scraper](https://pypi.org/project/dn-scraper/)
+Here's the library: [dn_scraper](https://pypi.org/project/dn-scraper/). Its should be installed as `pip install dn-scraper` and imported as `from dn_scraper import DetikNewsScraper`
 
 ### Why we're doing this
 
