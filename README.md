@@ -1,7 +1,24 @@
 # Detik News Search Unofficial API
+
 This script can search and return list of news result
 
-## Features
+---
+
+# Big Update
+
+Now we're separating script that fetch detik news to new library, this repo use that new library.
+
+Here's the library: [dn_scraper](https://pypi.org/project/dn-scraper/)
+
+### Why we're doing this
+
+We want to separate the library that fetch data and the interface like web api interface using flask that this repo demonstrate.
+
+Now, you can grab the library and use that for the interface you like, maybe with FastApi, Django, or as Command Line Interface.
+
+---
+
+## Features of This Repo
 
 - Search for news articles by query
 - Retrieve detailed article content
@@ -32,20 +49,12 @@ This script can search and return list of news result
 3. **Install the required packages**:
 
     ```bash
-    pip install -r requirements.txt
-    ```
-
-    Make sure you have a `requirements.txt` file with necessary dependencies. For this project, it might include:
-
-    ```
-    Flask
-    requests
-    beautifulsoup4
+    pip install dn_scraper
     ```
 
 ## Configuration
 
-Ensure that your `script` file contains the `DetikNewsApi` class and is correctly implemented. The Flask app in `main.py` uses this class for making API requests.
+It should work without any further configuration. If somethin wrong, we're really appreciate you to open new issue.
 
 ## Usage
 
