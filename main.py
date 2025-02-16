@@ -1,10 +1,10 @@
-from script import DetikNewsApi
+from dn_scraper import DetikNewsScraper
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Initialize the DetikNewsApi object
-DN_API = DetikNewsApi()
+# Initialize the DetikNewsScraper object
+DN_API = DetikNewsScraper()
 
 
 @app.route("/search", methods=["GET"])
