@@ -49,7 +49,7 @@ Now, you can grab the library and use that for the interface you like, maybe wit
 3. **Install the required packages**:
 
     ```bash
-    pip install dn_scraper Flask
+    pip install dn-scraper Flask
     ```
 
 ## Configuration
